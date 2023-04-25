@@ -1,53 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./Card/card.style.css">
-    <link rel="stylesheet" href="./SearchBar/searchBar.style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/style.css">
-    <title>Pinterest</title>
-</head>
-<body>
-    <!-- NAVBAR -->
-
-<div class="nav">
-    <li><img src="logo.png" alt="logo" width="30" height="30"></li>
-    <li>Home</li>
-    <li>Today</li>
-    <li class="search"><input type="search" placeholder="Search"></li>
-    <li class="notification"><i class="fas fa-bell"></i></li>
-    <li><i class="far fa-comment-dots"></i></li>
-    <li class="profile"><img src="durgesh.jpg" alt="profile" width="30" height="30"></li>
-</div>
-
-    <!-- FlexBox -->
-    
-<div class="container-post">
-    <div class="window">
-        <img src="./images/carro2.jpg" alt="">
-            <p>Yeesss</p>
-        <img src="./images/tatuaje4.jfif" alt="">
-    </div>
-
-    <div class="hover-zone">
-        <div class="top-bar">
-            <p>profile</p>
-            <a>save</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clon Pinterest</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Este es un Clon de Pinteres Realizado por Oscar</h1>
+    <nav>
+      
+        <ion-icon name="logo-pinterest"></ion-icon>
+        <a>Hoy</a>
+        <a>Siguiendo</a>
+        <div class="barra-busqueda">
+          <form >
+            <input type="text" placeholder="buscar" name="search" class="search">
+            
         </div>
-    </div>
-
-    <div class="bottom-bar">
-        <a href="">website.com</a>
-        <div class="radius-ico">
-            <img src="/images/three-dots.svg" alt="">
-            <img src="/images/upload.svg" alt="">
+        <a href="">
+          <ion-icon name="notifications-sharp"></ion-icon>
+        </a>
+        <a href="">
+          <ion-icon name="chatbubble-ellipses-sharp"></ion-icon>
+        </a>
+        <a href="">
+          <ion-icon name="person-sharp"></ion-icon>
+        </a>
+      
+    </nav>
+    <main>
+      <section class="wrapper-card">
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=99 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
         </div>
-    </div>
-</div>
-<script src="/script.js"></script>
-</body>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=98 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=97 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=96 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=2 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=3 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=4 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=5 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=6 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=7 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=8 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=9 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=10 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=11 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=12 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=13 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=14 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=15 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=16 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=17 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=18 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button class="menu-superior">Guardar</button>
+          </div>
+          <img src="https://picsum.photos/500?random=19 alt=" />
+          <div class="lowermenu">
+            <button><a href="">Link de descarga</a></button>
+            <ion-icon name="download"></ion-icon>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </body>
 </html>
