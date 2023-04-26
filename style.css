@@ -5,7 +5,7 @@
   }
   
   :root {
-    --background-color: lightgrey;
+    --background-color: rgb(255, 255, 255);
   }
   
   body {
@@ -15,7 +15,7 @@
   nav {
     width: 100%;
     height: auto;
-    background-color: lightgray;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -75,7 +75,7 @@
     grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
     justify-content: center;
     grid-template-rows: masonry;
-    border: 3px solid blue;
+    border: 3px solid rgb(255, 255, 255);
     gap: 0.5rem;
   }
   
