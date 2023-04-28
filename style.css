@@ -23,6 +23,8 @@
     font-size: 2rem;
     padding: 1rem;
   }
+
+  
   
   .barra-busqueda {
     height: 45px;
@@ -201,6 +203,10 @@
     text-decoration: none;
     border-style: none;
     color: white;
+  }
+
+  .down {
+    color: black;
   }
   
   @media only screen and (max-width: 800px) {
