@@ -9,16 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <h1>GRUPO 6 </h1>
-
-    <div class="pinterest">
+    <h1 class="tituloGrupo">GRUPO 6 </h1>
+    <div class="pinterest"> 
       <div class="left">
         <a href="#" class="logo"><i class="fab fa-pinterest"></i></a>
         <a href="#" class="home">inicio</a>
       </div>
-
-      
-      <div class="search">
+      <div class="search" id="search">
         <i class="fas fa-search"></i>
         <input type="search" name="" placeholder="search" id="">
       </div>
@@ -32,7 +29,64 @@
       </div>
     </div>
     <main>
-      <section class="wrapper-card" id="wrapper-card">
+      <section class="modal-search" id="modal-search">
+        <section class="window-search">
+          <div id="reciente">
+            <div id="cabecera-busqueda">
+              <h5>Busqueda Reciente</h5>
+              <span class="cerrarBusqueda" id="cerrarBusqueda">x</span>
+            </div>
+              <div id="recienteItems">
+                <p>carros</p>
+                <p>motocicletas</p>
+                <p>tatuajes</p>
+              </div>
+          </div>
+          <div id="ideasParaTi">
+            <h5>Ideas para ti</h5>
+            <div class="contenedor-search">
+              <div class="idea-search">
+                <h4>Carros Modernos</h4>
+                <img src="img/carros/carro1.jpg" />
+              </div>
+              <div class="idea-search">
+                <h4>Carros Modernos</h4>
+                <img src="img/carros/carro2.jpg" />
+              </div>
+              <div class="idea-search">
+                <h4>Carros Modernos</h4>
+                <img src="img/carros/carro4.jpg" />
+              </div>
+              <div class="idea-search">
+                <h4>Carros Modernos</h4>
+                <img src="img/carros/carro5.jpg" />
+              </div>
+            </div>
+          </div>
+          <div id="populares">
+            <h5>Popular en Pinterest</h5>
+            <div class="contenedor-search">
+              <div class="idea-search">
+                <h4>Carros Modernos</h4>
+                <img src="img/carros/carro1.jpg" />
+              </div>
+              <div class="idea-search">
+                <h4>Carros Modernos</h4>
+                <img src="img/carros/carro2.jpg" />
+              </div>
+              <div class="idea-search">
+                <h4>Carros Modernos</h4>
+                <img src="img/carros/carro4.jpg" />
+              </div>
+              <div class="idea-search">
+                <h4>Carros Modernos</h4>
+                <img src="img/carros/carro5.jpg" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="wrapper-card" id="wrapper-card"> 
         <div class="card">
           <div>
             <button class="menu-superior">Guardar</button>
@@ -253,7 +307,7 @@
             <ion-icon name="ellipsis-horizontal"></ion-icon>
           </div>
         </div>
-        <!-- <div class="card">
+         <div class="card">
           <div>
             <button class="menu-superior">Guardar</button>
           </div>
@@ -274,7 +328,7 @@
             <ion-icon name="download"></ion-icon>
             <ion-icon name="ellipsis-horizontal"></ion-icon>
           </div>
-        </div> -->
+        </div>
       </section>
     </main>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

@@ -25,3 +25,15 @@ const nuevaCard = (i) =>{
     `;
     cont.appendChild(nCard);
 }
+//Evento para mostrar pantalla de search
+const search = document.getElementById('search');
+search.addEventListener('click', ()=>{
+    const modalSearch = document.getElementById('modal-search');
+    modalSearch.classList.add('modal-search-show');
+})
+//Evento para cerrar pantalla de search
+const cerrarSearch = document.getElementById('cerrarBusqueda');
+cerrarSearch.addEventListener('click', ()=>{
+    const modalSearch = document.getElementById('modal-search');
+    modalSearch.classList.remove('modal-search-show');
+})
