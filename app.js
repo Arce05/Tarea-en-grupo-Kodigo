@@ -1,3 +1,10 @@
+//Metodo para mostrar imagenes al cargar la pagina
+function cargarImagenes() {
+    for (let i = 0; i < 20; i++) {
+        nuevaCard(i);
+    }
+}
+
 //Evento para capturar el scroll hasta el final de la pantalla
 window.addEventListener('scroll', ()=>{
     const {scrollTop, scrollHeight, clientHeight} = document.documentElement;
@@ -7,7 +14,7 @@ window.addEventListener('scroll', ()=>{
         }
     }
 });
-//Funcion para agregar imagenes cuando se hace scroll infinito
+//Funcion para agregar imagenes al inicio y al hacer scroll
 const nuevaCard = (i) =>{
     const cont = document.getElementById('wrapper-card');
     const nCard = document.createElement('div');
