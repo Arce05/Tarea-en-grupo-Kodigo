@@ -48,14 +48,26 @@ const nuevaCard = (i) =>{
 
 //Evento para mostrar pantalla de search
 const search = document.getElementById('search');
-search.addEventListener('click', ()=>{
-    const modalSearch = document.getElementById('modal-search');
-    modalSearch.classList.add('modal-search-show');
-})
+search.addEventListener('click', (e)=>{
+        const modalSearch = document.getElementById('modal-search');
+        modalSearch.classList.add('modal-search-show');
+});
 
 //Evento para cerrar pantalla de search
-const btnCerrar = document.getElementById('cerrarBusqueda');
-btnCerrar.addEventListener('click', cerrarSearch);
+const windowSearch = document.getElementById('modal-search');
+windowSearch.addEventListener('click', (e)=>{
+    if(e.target.id === 'modal-search'){
+        cerrarSearch();
+    }
+})
+
+//Evento para quitar busqueda reciente
+const cerrar = document.getElementsByClassName('cerrarReciente');
+for (const x of cerrar) {
+    x.addEventListener('click', (e)=>{
+        e.target.parentNode.remove();
+    })
+}
 
 //Funcion para cerrar pantalla de search
 function cerrarSearch() {
@@ -127,4 +139,5 @@ function cargarSearchResults(folder, searchString){
         `;
         cont.appendChild(nCard);
     }
+    hijo.scrollIntoView({behavior: "smooth"});
 }
