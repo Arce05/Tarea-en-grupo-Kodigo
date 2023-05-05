@@ -320,18 +320,38 @@ body {
     text-align: center;
   }
 
-  #recienteItems p{
+
+  .recienteItem{
     width: 20%;
-    height: 100%;
-    background-color: #dddada;
+    min-width: auto;
+    height: auto;
+    padding: 0.2rem;
     border-radius: 25px;
     font-size: 1rem;
+    background-color: #dddada;
   }
 
-  #recienteItems p:hover{
+  .recienteItem p{
+    display: inline-block;
+  }
+
+  .item{
+    width: 70%;
+  }
+
+  .cerrarReciente{
+    width: 30%;
+  }
+
+  .cerrarReciente:hover{
+    border-radius: 25px;
+    background-color: #aaa9a9;
+  }
+
+  .recienteItem:hover{
     cursor: pointer;
     background-color: #c5c3c3;
-  }
+  } 
 
   /* .main {
     width: 1200px;
