@@ -141,3 +141,21 @@ function cargarSearchResults(folder, searchString){
     }
     hijo.scrollIntoView({behavior: "smooth"});
 }
+
+//Evento para abrir ventana derecha de la cuenta
+const ventanaAccount = document.getElementById('items-down');
+ventanaAccount.addEventListener('click', ()=>{
+    const rightPanel = document.getElementById('right-panel');
+    if(rightPanel.classList.contains('right-panel-show')){
+        rightPanel.classList.remove('right-panel-show');
+    }else{
+        rightPanel.classList.add('right-panel-show');
+    }
+});
+
+//Evento para cerrar ventana derecha de la cuenta
+const panelAccount = document.getElementById('right-panel');
+panelAccount.addEventListener('click', (e)=>{
+    console.log('podeis cerrar');
+    console.log(e.target);
+})

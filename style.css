@@ -147,6 +147,70 @@ body {
   background: #e5e5e5;
 }
 
+.right-panel{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 150;
+  height: 75vh;
+  width: 99vw;
+  align-items: end;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.right-panel-show{
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.right-panel li{
+  list-style-type: none;
+}
+
+
+.right-panel-currently, .right-panel-account{
+  height: 25%;
+  width: 25%;
+  min-width: auto;
+  background-color: #fcfcfc;
+  opacity: 1;
+}
+
+.right-panel-options{
+  height: 50%;
+  width: 25%;
+  min-width: auto;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  background-color: #fcfcfc;
+  opacity: 1;
+}
+
+.rp-item{
+  font-size: 1.2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 0.5rem;
+  border-radius: 25px;
+}
+
+.rp-item:hover{
+  background-color: #ececec;
+}
+
+.right-panel-currently{
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.right-panel-account{
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
 
 
 
